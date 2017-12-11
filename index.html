@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Architect Designer</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/material-design-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" href="styles/architect.css">
+
+</head>
+<body>
+<app-root>
+    <h1>Hello World!</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+</app-root>
+</body>
+<script type="text/javascript" src="common/renderer.js"></script>
+<script type="text/javascript" src="common/systemjs.config.js"></script>
+<script>
+    System.import('app')
+        .catch(function(err){
+            console.error(err);
+        });
+</script>
+</html>

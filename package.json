@@ -1,0 +1,54 @@
+{
+  "name": "architect-designer-electron",
+  "publishName": "Architect Designer",
+  "description": "Application ...",
+  "version": "0.0.1",
+  "electronVersion": "0.0.1",
+  "main": "launcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-packager . $npm_package_publishName --all --version=$npm_package_electronVersion --app-version=$npm_package_version --out=dist --ignore=dist --prune",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vimsvei/architect-designer-electron.git"
+  },
+  "keywords": [
+    "architect",
+    "c4",
+    "designer",
+    "electron",
+    "angular",
+    "bootstramp"
+  ],
+  "author": {
+    "name": "Alexandr Zeletnsov",
+    "email": "alexandr.zelentsov@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/vimsvei/architect/issues"
+  },
+  "homepage": "https://github.com/vimsvei/architect-designer-electron/wiki",
+  "dependencies": {
+    "@angular/common": "^5.1.0",
+    "@angular/compiler": "^5.1.0",
+    "@angular/core": "^5.1.0",
+    "@angular/platform-browser": "^5.1.0",
+    "@angular/platform-browser-dynamic": "^5.1.0",
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "material-design-icons": "^3.0.1",
+    "popper.js": "^1.12.9",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.5.5",
+    "systemjs": "^0.20.19",
+    "tether": "^1.4.3",
+    "zone.js": "^0.8.18"
+  },
+  "devDependencies": {
+    "electron": "^1.7.9"
+  }
+}
